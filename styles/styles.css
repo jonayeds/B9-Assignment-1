@@ -249,14 +249,14 @@ button, input[type="submit"]:hover{
   text-align: center;
   background: rgba(255, 0, 0, 0.05);
   padding: 80px 212px;
-  width:max-content;
+  width: max-content;
+  
 }
 .newsletter p {
   max-width: 896px;
   margin: 20px auto 48px;
 }
-.newsletter form {
-}
+
 .newsletter input[type="email"] {
   border: none;
   padding: 25px 30px;
