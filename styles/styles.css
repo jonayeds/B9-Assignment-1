@@ -6,24 +6,53 @@
   margin: 0;
   padding: 0;
 }
-.section {
+section, header {
+  max-width: 1320px;
   width: 82.5%;
-  max-width: 660px;
   margin: 25px auto 170px;
   border-radius: 16px;
+}
+.section-description{
+  color: rgba(7, 2, 17, 0.60);
+  font-family: "Inter", sans-serif;
+font-size: 20px;
+
+font-weight: 400;
+line-height: 32px;
+}
+.section-heading{
+  color: #070211;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  font-family: "Inter", sans-serif;
+
+}
+.section-sub-heading{
+  color: #F00;
+  font-family: "Inter", sans-serif;
+font-size: 24px;
+font-weight: 500;
+margin-bottom: 10px;
+}
+.highlight {
+  color: #f00;
 }
 /* header related styles */
 
 #header-banner {
-  
   background: linear-gradient(180deg, #070211 0%, rgba(7, 2, 17, 0) 100%),
     url("../resources/Banner\ Image.png");
 
   font-family: "Merriweather", serif;
   color: #fff;
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 182px 344px;
+  padding: 200px 344px;
+
+  
+  border-radius: 16px;
 }
 #header-banner > h3 {
   text-align: center;
@@ -33,16 +62,20 @@
 }
 #header-banner > h1 {
   text-align: center;
-  font-size: 65px;
+  font-size: 72px;
   font-weight: 900;
   line-height: 95px;
+  max-width: 600px;
+  margin: 0 auto;
 }
+#header-banner 
 
 /* Sale section */
 
 #sale-section {
   font-family: "Inter", sans-serif;
   max-width: 410px;
+  padding: 126px;
 }
 
 #sale-section > div > h1 {
@@ -54,18 +87,11 @@
   margin-bottom: 48px;
 }
 #sale-section > div > h4 {
-  color: #f00;
   text-align: center;
-  font-size: 24px;
-  font-weight: 500;
-  margin-bottom: 10px;
+ 
 }
 #sale-section > div > h3 {
-  color: #070211;
   text-align: center;
-  font-size: 48px;
-  font-weight: 700;
-  margin-bottom: 48px;
 }
 .newyear-img {
   display: flex;
@@ -73,25 +99,209 @@
 }
 
 /* midnight party section */
-
-#midnight-party {
-  background: url("../resources/Vectorrr.png");
-  padding: 150px 500px 150px 126px;
+#party-section {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(90deg, #070211 0%, rgba(7, 2, 17, 0) 100%),
+    url("../resources/Vectorrr.png");
   background-size: cover;
-  background-repeat: no-repeat;
+  background-position: right;
+  padding: 106px 126px 120px 126px;
+  align-items: center;
+  width: max-content;
 }
-#midnight-party > h2 {
+#party-section > div > h1 {
   color: #fff;
-  font-family: "Merriweather", serif;
   font-size: 64px;
+  font-style: normal;
   font-weight: 900;
-  line-height: 88px;
+  line-height: 70px;
   letter-spacing: 7.04px;
+  margin-bottom: 24px;
 }
-#midnight-party > p {
+#party-section > div > p {
   color: rgba(255, 255, 255, 0.8);
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 30px;
+  margin-bottom: 48px;
+  max-width: 600px;
+}
+#party-section div {
+  max-width: 697px;
+}
+#party-section > div > button {
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  background: transparent;
+  border: none;
+}
+
+/* invitation card */
+
+#invitation {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 0, 0, 0.1) 0%,
+    rgba(255, 0, 0, 0) 100%
+  );
+  text-align: center;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  padding: 126px 0;
+
+}
+#invitation h3 {
+  color: #070211;
+
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 56px;
+}
+
+#invitation button {
+  padding: 16px 32px;
+  margin-top: 48px;
+  border-radius: 8px;
+  background: #f00;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+}
+/* new year offer section */
+
+#new-year-offer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+}
+
+#new-year-offer div {
+  max-width: 393px;
+}
+.ellipse {
+  background: #fff;
+  border: 10px solid #f00;
+  border-radius: 50%;
+  padding: 50px;
+  margin: 0px ;
+  display: flex;
+  justify-content: center;
+}
+#new-year-offer .div3 img {
+  margin-top:40px ;  
+}
+
+/* portfolio section */
+#portfolio{
+  width: max-content;
+}
+.portfolio-text{
+  max-width: 800px;
+}
+.portfolio-text p{
+  margin-bottom: 45px;
+}
+.portfolio-images img{
+  margin: 0 12px;
+}
+.portfolio-images{
+  display: flex;
+  
+  justify-content: space-between;
+}
+.portfolio-images img:hover{
+  scale: 90%;
+}
+/* newaletter section */
+.newsletter{
+  text-align: center;
+  background: rgba(255, 0, 0, 0.05);
+  padding: 80px 212px;
+  width: max-content;
+
+
+}
+.newsletter p{
+  max-width: 896px;
+  margin: 20px auto 48px;
+  
+  
+}
+.newsletter form{
+}
+.newsletter input[type="email"]{
+  border: none;
+  padding: 25px 30px;
+  margin-right: 0;
+  color: rgba(7, 2, 17, 0.30);
+  font-family: "Inter", sans-serif;
+text-align: center;
+font-size: 18px;
+font-weight: 400;
+border-radius: 50px 0 0 50px;
+}
+.newsletter input[type="submit"]{
+  color: #FFF;
+text-align: center;
+  border: none;
+  padding: 25px 30px;
+  margin-left: 0;
+  font-family: "Inter", sans-serif;
+text-align: center;
+font-size: 18px;
+font-weight: 400;
+border-radius: 0px 50px 50px 0px;
+background-color: #F00;
+}
+.newsletter img{
+  margin-bottom: 40px;
+}
+
+
+/* footer related styles */
+footer{
+  background: #070211;
+  padding: 120px 140px;
+}
+.footer-text{
+  color: #FFF;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px;
+  max-width: 375px;
+ 
+}
+
+.div-1{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+ 
+}
+hr{
+  border:1px solid  rgba(255, 255, 255, 0.15);
+}
+.div-2{
+  
+  display: flex;
+  justify-content: center;
+  margin: 48px 0;
+  gap: 24px;
+}
+.div-3{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
 }
